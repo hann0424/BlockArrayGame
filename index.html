@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>201910146_ChoiYoungHan_ArraysAndBlocks</title>
+
+    <!-- Loads a CSS style file -->
+    <link rel="stylesheet" href="WorkingStyles.css">
+
+    <!-- Loads a javascript library file -->
+    <script src="WorkingLibrary.js"></script>
+  </head>
+
+  <body>
+    <audio id="coinSound" src="coinsound.wav"></audio>
+    <audio id="deadSound" src="deadsound.wav"></audio>
+    <audio id="levelSound" src="levelupsound.wav"></audio>
+    <audio id="startSound" src="startsound.wav"></audio>
+
+    <p class="pageTitle" id="pageTitle_id"></p>
+
+    <div class="workingContainer">
+      
+      <!-- Answers go here -->
+      <div class="workingSpace" id="workingSpace_id"></div>
+     
+      <!-- Trigger buttons -->
+      <div class="buttonSpace">
+      <div class="game-details">
+        <span class="score">Score: 0</span>
+        <span class="high-score">High Score: --</span>
+        <div class="parent">
+          <span class="level">Level: 1</span>
+      </div>
+      </div>
+		  <button onclick="gameRule()" class="btn"id="gameRule">gameRule</button>
+		  <button onclick="startMain(MainLoop, speed)" class="btn"id="startButton">Start Game</button>
+		  <button onclick="stopMain()" class="btn"id="gamePause">Game Pause</button>
+      <button onclick="ReStart()" class="btn"id="reStart">ReStart</button>
+		  <!--<button onclick="clearAll()" class="btn">Clear!</button>-->
+      </div>
+    </div>
+
+    <!-- Errors will show here -->
+    <div class="errorSpace" id="errorSpace_id"></div>
+
+    <!-- function code goes here -->
+    <div class="codeSpace" id="codeSpace_id"></div>
+
+  </body>
+
+  <footer>
+    <!-- Loads your javascript working file -->
+    <script src="MyWorkingSpace.js"></script>
+  </footer>
+
+</html>
